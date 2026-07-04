@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Dad</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="stars"></div>
+
+    <button id="musicToggle">🔊</button>
+
+    <div id="confetti-wrapper"></div>
+
+    <audio id="birthdayMusic" loop autoplay playsinline preload="auto">
+      <source src="assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <section id="loading" class="screen active">
+      <h1>Preparing Something Special...</h1>
+      <div class="loader">
+        <div class="progress"></div>
+      </div>
+    </section>
+
+    <section id="countdown" class="screen">
+      <div id="countNumber">3</div>
+    </section>
+
+    <section id="hero" class="screen">
+      <div class="confetti-container"></div>
+
+      <h1 class="title">Happy Birthday Papa🎉</h1>
+
+      <img src="assets/5.JPG" class="profile" />
+
+      <h2 class="dad-name">ERNEST MMAPHALA MAKGURA</h2>
+
+      <h3 class="age">Turning 48</h3>
+
+      <button id="giftBtn">Open Your Gift 🎁</button>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="envelope">
+        <div class="letter-card">
+          <h2>Dear Dad ❤️</h2>
+
+          <p id="typewriter">
+            Thank you for your love, sacrifices, guidance and support throughout
+            the years. You have always been our hero, our teacher and our
+            protector. May this birthday bring joy, peace and blessings into
+            your life. Happy Birthday Dad.
+          </p>
+
+          <button id="galleryBtn">Continue →</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="screen scrollable">
+      <h1>Beautiful Memories 📸</h1>
+
+      <div class="slideshow-container">
+        <img src="assets/3.JPG" class="slide active" />
+        <img src="assets/" class="slide" />
+        <img src="assets/2.JPG" class="slide" />
+        <img src="assets/photo4.jpg" class="slide" />
+        <img src="assets/photo5.jpg" class="slide" />
+        <img src="assets/4.JPG" class="slide" />
+        <img src="assets/photo7.jpg" class="slide" />
+        <img src="assets/6.JPG" class="slide" />
+        <img src="assets/photo9.jpg" class="slide" />
+        <img src="assets/photo10.jpg" class="slide" />
+        <img src="assets/photo11.jpg" class="slide" />
+        <img src="assets/photo12.jpg" class="slide" />
+        <img src="assets/" class="slide" />
+        <img src="assets/" class="slide" />
+        <img src="assets/5.JPG" class="slide" />
+        <img src="assets/1.JPG" class="slide" />
+      </div>
+
+      <div class="gallery-actions">
+        <button id="rewatchBtn">Re-watch Slideshow 🔄</button>
+        <button id="reopenGiftBtn">Re-open the Gift 🎁</button>
+        <button id="appreciationBtn">Continue →</button>
+      </div>
+    </section>
+
+    <section id="appreciation" class="screen">
+      <h1>Things We Appreciate ❤️</h1>
+
+      <div class="cards">
+        <div class="card">Thank you for your sacrifices.</div>
+        <div class="card">Thank you for your wisdom.</div>
+        <div class="card">Thank you for your support.</div>
+        <div class="card">Thank you for always believing in us.</div>
+      </div>
+
+      <button id="finalBtn">Final Surprise 🎆</button>
+    </section>
+
+    <section id="final" class="screen">
+      <canvas id="fireworks"></canvas>
+
+      <div class="final-content">
+        <img src="assets/profile.jpg" class="final-photo" />
+
+        <h1 class="neon-text">Thank You For Everything Dad ❤️</h1>
+
+        <p class="final-message">Happy Birthday 🎂</p>
+
+        <button id="restartBtn">Replay Surprise 🔄</button>
+        <button id="homeBtn">🏠 Home</button>
+        <button id="exitBtn">❌ Exit</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
